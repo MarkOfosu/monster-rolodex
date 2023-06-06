@@ -14,7 +14,6 @@ export type Monster = {
 
 }
 
-
 const App = () => {
   const [searchField, setSearchField] =useState('');
   const [monsters, setMonsters] = useState<Monster[]>([]);
@@ -51,7 +50,7 @@ return(
   <div className="App">
     <h1 className='app-title'>Monsters Rolodex</h1>
   <SearchBox  
-  type='search'
+  className='monsters-search-box'
   placeholder='search monsters'
   onChangeHandler ={handleSearchChange}
   />
